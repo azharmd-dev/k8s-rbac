@@ -20,4 +20,11 @@ data:
       - cl-admin
       userarn: arn:aws:iam::522534289017:user/suresh
       username: suresh
-
+    - groups:
+      - cl-admin
+      userarn: arn:aws:iam::522534289017:user/anil
+      username: anil
+    - groups:
+      - tarinee
+      userarn: arn:aws:iam::522534289017:user/ravi
+      username: ravi

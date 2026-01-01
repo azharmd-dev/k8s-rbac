@@ -16,4 +16,8 @@ data:
       - tarinee
       userarn: arn:aws:iam::522534289017:user/rahul
       username: rahul
+    - groups:
+      - admin
+      userarn: arn:aws:iam::522534289017:user/suresh
+      username: suresh
 

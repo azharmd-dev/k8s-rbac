@@ -9,3 +9,8 @@
         ```
         aws eks update-kubeconfig --region us-east-1 --name robomart-dev
         ```
+    - This command tells you who you are authenticated as in AWS. It’s commonly used to verify credentials, roles, and accounts.
+        ```
+        aws sts get-caller-identity
+        ```
+        

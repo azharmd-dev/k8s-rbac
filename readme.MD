@@ -13,4 +13,16 @@
         ```
         aws sts get-caller-identity
         ```
-        
+* OpenID connect create
+    ```
+    eksctl utils associate-iam-oidc-provider --cluster robomart-dev --approve
+    ```
+* Create service account
+    ```
+    eksctl create iamserviceaccount --cluster robomart-dev --name secret-reader --namespace robomart --attach-policy-arn arn:aws:iam::160885265516:policy/RoboShopMySQLSecretReader --approve
+    ```
+* Get secret value
+    ```
+    aws secretsmanager get-secret-value --secret-id robomart/dev/mysql_password --query SecretString --output text
+    ```
+

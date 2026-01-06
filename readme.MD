@@ -19,7 +19,7 @@
     ```
 * Create service account
     ```
-    eksctl create iamserviceaccount --cluster robomart-dev --name secret-reader --namespace robomart --attach-policy-arn arn:aws:iam::160885265516:policy/RoboShopMySQLSecretReader --approve
+    eksctl create iamserviceaccount --cluster robomart-dev --name secret-reader --namespace robomart --attach-policy-arn arn:aws:iam::522534289017:policy/RoboMartMySQLReader --approve
     ```
 * Get secret value
     ```
